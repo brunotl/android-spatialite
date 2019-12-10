@@ -174,14 +174,13 @@ spatialite_flags := \
     -DENABLE_GEOPACKAGE=1 \
     -DENABLE_LIBXML2=1 \
     -DGEOS_ADVANCED=1 \
-    -DHAVE_ICONV_H=1 \
-    -DENABLE_RTTOPO=1
+    -DHAVE_ICONV_H=1
 
 LOCAL_CFLAGS    := \
    $(common_sqlite_flags) \
    $(spatialite_flags)
 
-LOCAL_STATIC_LIBRARIES := proj4 geos libsqlite3x iconv libxml2 freexl librttopo
+LOCAL_STATIC_LIBRARIES := proj4 geos libsqlite3x iconv libxml2 freexl
 
 LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/$(SPATIALITE_PATH)/src/headers
 LOCAL_EXPORT_LDLIBS := -llog -lz

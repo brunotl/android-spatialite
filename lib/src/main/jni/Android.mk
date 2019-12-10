@@ -44,7 +44,6 @@ ICONV_PATH := libiconv-1.13
 LZMA_PATH := xz-5.2.1
 XML2_PATH := libxml2-2.9.2
 FREEXL_PATH := freexl-1.0.2
-RTTOPO_PATH := librttopo-1.1.0
 
 include $(NDK_MODULES_PATH)/sqlite/sqlite.mk
 include $(NDK_MODULES_PATH)/libspatialite/$(SPATIALITE_PATH).mk
@@ -55,6 +54,5 @@ include $(NDK_MODULES_PATH)/libiconv/$(ICONV_PATH).mk
 include $(NDK_MODULES_PATH)/liblzma/$(LZMA_PATH).mk
 include $(NDK_MODULES_PATH)/libxml2/$(XML2_PATH).mk
 include $(NDK_MODULES_PATH)/freexl/$(FREEXL_PATH).mk
-include $(NDK_MODULES_PATH)/librttopo/$(RTTOPO_PATH).mk
 
 # NOTE: iconv is dependency of Spatialite virtual modules like VirtualText, VirtualShape, VirtualXL, etc.
