@@ -52,7 +52,7 @@ dependencies {
 }
 
 ext {
-    sqliteDistributionUrl = 'http://sqlite.org/2016/sqlite-amalgamation-3150100.zip'
+    sqliteDistributionUrl = 'https://sqlite.org/2021/sqlite-amalgamation-3340100.zip'
 }
 
 task sourcesJar(type: Jar) {
